@@ -1,0 +1,23 @@
+.header {
+  min-height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 86px;
+  }
+}
+
+.header__tel {
+  @include link;
+
+  color: $text-color-light;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}

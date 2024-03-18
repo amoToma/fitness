@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
@@ -8,29 +8,38 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
-    <main>
+  <body class="page__body">
+    <main class="page__main">
       <h1 class="visually-hidden">Фитнес центр Supergim</h1>
       <section class="hero" data-test="hero">
-        <header class="hero__header header">
-          <img class="header__logo" src="/" width="" height="" alt="Логотип фитнес центр Supergim.">
-          <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
+        <header class="hero__header container header">
+          <img class="header__logo" src="/" width="" height="" alt="Логотип фитнес центра Supergim.">
+          <a class="header__tel" href="tel:+78005555555">8 800 555-55-55</a>
         </header>
-        <p>Омск</p>
-        <ul>
-          <li>
-            Тренажерный зал
-          </li>
-          <li>
-            Групповые занятия
-          </li>
-          <li>
-            Кардио-зона
-          </li>
-        </ul>
-        <h2>Фитнес центр</h2>
-        <a href="#tickets">Купить абонемент</a>
-        <img src="/" width="" height="" alt="Тренер фитнес центра">
+
+        <div class="hero__contant container">
+          <div class="hero__info-container">
+
+              <ul class="hero__services-list">
+                <li>
+                  Тренажерный зал
+                </li>
+                <li>
+                  Групповые занятия
+                </li>
+                <li>
+                  Кардио-зона
+                </li>
+              </ul>
+              <div class="hero__title-container">
+                <p class="hero__title-intro">Омск</p>
+                <h2 class="hero__title">Фитнес центр</h2>
+              </div>
+
+            <a class="hero__button button" href="#tickets">Купить абонемент</a>
+          </div>
+          <img class="hero__img" src="/" width="324" height="390" alt="Тренер фитнес центра">
+        </div>
       </section>
 
       <section class="about" data-test="about">

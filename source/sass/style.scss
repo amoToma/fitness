@@ -6,3 +6,15 @@
 //global
 @import "global/visually-hidden.scss";
 @import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+//block
+@import "block/page.scss";
+@import "block/container.scss";
+@import "block/header.scss";
+@import "block/hero.scss";
+
+//element
+@import "elements/button.scss";
