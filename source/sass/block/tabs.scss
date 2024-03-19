@@ -1,0 +1,44 @@
+.tabs__navigation {
+  @include list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tabs__navigation-link {
+  @include link;
+
+  color: $text-color;
+  opacity: 50%;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 18px;
+}
+
+.tabs__navigation {
+  border-bottom: solid 1px #dedfe2;
+}
+
+.tabs__card {
+  background-color: $base-background;
+  padding: 50px 42px;
+  text-align: center;
+}
+
+.tabs__cards-list {
+  @include list;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: grid;
+  gap: 35px;
+
+  @media (min-width:$tablet-width) {
+    gap: 40px;
+  }
+
+  @media (min-width:$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

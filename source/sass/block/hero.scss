@@ -1,6 +1,14 @@
 .hero {
   background: linear-gradient(to right, #003d85, #b80027);
   color: $text-color-light;
+
+  @media (min-width:$tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-bottom: 120px;
+  }
 }
 
 .hero__contant {
@@ -8,16 +16,14 @@
   padding-bottom: 32px;
 
   @media (min-width:$tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
 
   @media (min-width:$desktop-width) {
-    justify-content: flex-end;
-    padding-right: 72px;
-    gap: 56px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-left: 250px;
   }
 }
 
@@ -27,6 +33,7 @@
   column-gap: 21px;
   row-gap: 48px;
   align-items: end;
+
 
   @media (min-width:$tablet-width) {
     grid-template-columns: 113px 185px;

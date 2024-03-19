@@ -19,7 +19,6 @@
 
         <div class="hero__contant container">
           <div class="hero__info-container">
-
               <ul class="hero__services-list">
                 <li>
                   Тренажерный зал
@@ -35,82 +34,85 @@
                 <p class="hero__title-intro">Омск</p>
                 <h2 class="hero__title">Фитнес центр</h2>
               </div>
-
             <a class="hero__button button" href="#tickets">Купить абонемент</a>
           </div>
-          <img class="hero__img" src="/" width="324" height="390" alt="Тренер фитнес центра">
+          <!--<img class="hero__img" src="/" width="324" height="390" alt="Тренер фитнес центра">-->
         </div>
       </section>
 
       <section class="about" data-test="about">
-        <h2>
-          Тренажерный зал
-        </h2>
-        <p>
-          Просторный зал площадью 900 кв/м
-        </p>
-        <p>
-          Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-        </p>
-        <p>
-          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
-        </p>
-        <img src="/" width="" height="" alt="Тренажерный зал">
+        <div class="about__content-container">
+          <h2 class="about__title page__title">
+            Тренажерный зал
+          </h2>
+          <p class="about__intro">
+            Просторный зал площадью 900 кв/м
+          </p>
+          <div class="about__text-container">
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+        </div>
+        <img src="/" width="660" height="400" alt="Тренажерный зал">
         <!-- Здесь будет видео -->
       </section>
 
       <section class="price" data-test="price">
-        <a name="tickets"></a>
-        <h2>Абонементы</h2>
-        <div class="price__tabs tabs">
-            <ul class="tabs__navigation">
-              <li>
-                <button type="button">1 месяц</button>
-              </li>
-              <li>
-                <button type="button">6 месяцев</button>
-              </li>
-              <li>
-                <button type="button">12 месяцев</button>
-              </li>
-            </ul>
+        <a id="tickets"></a>
+        <h2 class="price__title page__title">Абонементы</h2>
+        <div class="price__tabs tabs container">
+          <ul class="tabs__navigation">
+            <li class="tabs__navigation-item">
+              <a class="tabs__navigation-link" href="/">1 месяц</a>
+            </li>
+            <li class="tabs__navigation-item">
+              <a class="tabs__navigation-link" href="/">6 месяцев</a>
+            </li>
+            <li class="tabs__navigation-item">
+              <a class="tabs__navigation-link" href="/">12 месяцев</a>
+            </li>
+          </ul>
 
-            <ul class="tabs__content">
-              <li>
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
-                <span aria-hidden="true">5000</span>
-                <span>5000</span>
-                <span>₽</span>
-                <a href="/">
-                  Купить абонемент
-                </a>
-              </li>
-              <li>
-                <h3>Дневной</h3>
-                <p>с 8:00 до 17:00</p>
-                <span aria-hidden="true">1700</span>
-                <span>1700</span>
-                <span>₽</span>
-                <a href="/">
-                  Купить абонемент
-                </a>
-              </li>
-              <li>
-                <h3>Полный день</h3>
-                <p>С 8:00 до 22:00</p>
-                <span aria-hidden="true">2700</span>
-                <span>2700</span>
-                <span>₽</span>
-                <a href="/">
-                  Купить абонемент
-                </a>
-              </li>
-            </ul>
+          <ul class="tabs__cards-list">
+            <li class="tabs__card card">
+              <h3 class="card__title">С тренером</h3>
+              <p>12 занятий</p>
+              <span aria-hidden="true">5000</span>
+              <span>5000</span>
+              <span>₽</span>
+              <a href="/">
+                Купить абонемент
+              </a>
+            </li>
+            <li class="tabs__card">
+              <h3 class="card__title">Дневной</h3>
+              <p>с 8:00 до 17:00</p>
+              <span aria-hidden="true">1700</span>
+              <span>1700</span>
+              <span>₽</span>
+              <a href="/">
+                Купить абонемент
+              </a>
+            </li>
+            <li class="tabs__card">
+              <h3 class="card__title">Полный день</h3>
+              <p>С 8:00 до 22:00</p>
+              <span aria-hidden="true">2700</span>
+              <span>2700</span>
+              <span>₽</span>
+              <a href="/">
+                Купить абонемент
+              </a>
+            </li>
+          </ul>
 
-            <ul class="tabs__content">
-              <li>
-                <h3>С тренером</h3>
+          <ul class="tabs__cards-list">
+              <li class="tabs__card">
+                <h3 class="card__title">С тренером</h3>
                 <p>12 занятий</p>
                 <span aria-hidden="true">30000</span>
                 <span>30000</span>
@@ -119,8 +121,8 @@
                   Купить абонемент
                 </a>
               </li>
-              <li>
-                <h3>Дневной</h3>
+              <li class="tabs__card">
+                <h3 class="card__title">Дневной</h3>
                 <p>с 8:00 до 17:00</p>
                 <span aria-hidden="true">10200</span>
                 <span>10200</span>
@@ -129,8 +131,8 @@
                   Купить абонемент
                 </a>
               </li>
-              <li>
-                <h3>Полный день</h3>
+              <li class="tabs__card">
+                <h3 class="card__title">Полный день</h3>
                 <p>С 8:00 до 22:00</p>
                 <span aria-hidden="true">16200</span>
                 <span>16200</span>
@@ -139,11 +141,10 @@
                   Купить абонемент
                 </a>
               </li>
-            </ul>
-
-            <ul class="tabs__content">
-              <li>
-                <h3>С тренером</h3>
+          </ul>
+          <ul class="tabs__cards-list">
+              <li class="tabs__card">
+                <h3 class="card__title">С тренером</h3>
                 <p>12 занятий</p>
                 <span aria-hidden="true">5000</span>
                 <span>60000</span>
@@ -152,8 +153,8 @@
                   Купить абонемент
                 </a>
               </li>
-              <li>
-                <h3>Дневной</h3>
+              <li class="tabs__card">
+                <h3 class="card__title">Дневной</h3>
                 <p>с 8:00 до 17:00</p>
                 <span aria-hidden="true">20400</span>
                 <span>20400</span>
@@ -162,8 +163,8 @@
                   Купить абонемент
                 </a>
               </li>
-              <li>
-                <h3>Полный день</h3>
+              <li class="tabs__card">
+                <h3 class="card__title">Полный день</h3>
                 <p>С 8:00 до 22:00</p>
                 <span aria-hidden="true">32400</span>
                 <span>32400</span>
@@ -172,14 +173,15 @@
                   Купить абонемент
                 </a>
               </li>
-            </ul>
+          </ul>
         </div>
       </section>
 
       <section class="games">
+        <h2 class="visually-hidden">Соревнования</h2>
         <section class="games__info" data-test="games">
           <div>
-            <h2>Super games</h2>
+            <h2 class="games__title">Super games</h2>
             <div>
               <span>Дата</span>
               <div>
@@ -200,8 +202,8 @@
           <!--<img src="/" width="" height="" alt="Участник соревнования.">-->
         </section>
 
-        <section class="games__juri" data-test="juri">
-          <h2>Жюри</h2>
+        <section class="games__juri juri" data-test="juri">
+          <h2 class="juri__title page__title">Жюри</h2>
           <ul>
             <li>
               <h3>Анна Павлова</h3>
@@ -230,7 +232,7 @@
       </section>
 
       <section class="features" data-test="features">
-        <h2>Наши преимущества</h2>
+        <h2 class="features__title page__title">Наши преимущества</h2>
         <ul>
           <li>
             <p>
@@ -295,7 +297,7 @@
       </section>
 
       <section class="offers" data-test="offers">
-        <h2>Акции</h2>
+        <h2 class="offers__title page__title">Акции</h2>
         <ul>
           <li>
             <h3>Год <span>4999</span></h3>
@@ -318,7 +320,7 @@
       </section>
 
       <section class="faq" data-test="faq">
-        <h2>Вопросы и ответы</h2>
+        <h2 class="faq__title page__title">Вопросы и ответы</h2>
         <ul>
           <li>
             <button type="button">Центр</button>
@@ -532,7 +534,7 @@
       </section>
 
       <section class="reviews" data-test="reviews">
-        <h2>Отзывы</h2>
+        <h2 class="reviews__title page__title">Отзывы</h2>
         <div>
           <div>
             <img src="/" width="" height="" alt="Анна Орлова">
@@ -559,9 +561,9 @@
 
 
 
-      <section class="form" data-test="form">
-        <section>
-          <h2>
+      <div class="" data-test="form">
+        <section class="form">
+          <h2 class="form__title page__title">
             Бесплатное занятие
           </h2>
           <form  action="https://echo.htmlacademy.ru/" method="get">
@@ -574,8 +576,9 @@
             <button type="submit">Отправить</button>
           </form>
         </section>
+
         <section class="contacts">
-          <h2>
+          <h2 class="contacts__title page__title">
             Контакты
           </h2>
           <ul>
@@ -597,7 +600,7 @@
             </li>
           </ul>
         </section>
-      </section>
+      </div>
     </main>
 
     <footer class="footer" data-test="footer">
