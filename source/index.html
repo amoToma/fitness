@@ -13,7 +13,7 @@
       <h1 class="visually-hidden">Фитнес центр Supergim</h1>
       <section class="hero" data-test="hero">
         <header class="hero__header container header">
-          <img class="header__logo" src="/" width="" height="" alt="Логотип фитнес центра Supergim.">
+          <img class="header__logo" src="/__spritemap#sprite-logo-mobile-view"  alt="Логотип фитнес центра Supergim.">
           <a class="header__tel" href="tel:+78005555555">8 800 555-55-55</a>
         </header>
 
@@ -36,7 +36,6 @@
               </div>
             <a class="hero__button button" href="#tickets">Купить абонемент</a>
           </div>
-          <!--<img class="hero__img" src="/" width="324" height="390" alt="Тренер фитнес центра">-->
         </div>
       </section>
 
@@ -57,8 +56,17 @@
             </p>
           </div>
         </div>
-        <img src="/" width="660" height="400" alt="Тренажерный зал">
+        <div class="about__visual-content">
+          <picture>
+            <source type="image/jpg" media="(min-width: 1366px)"  srcset="img/about-gym-desktop@1x.jpg 1x, img/about-gym-desktop@2x.jpg 2x" width="660" height="400">
+            <source type="image/jpg" media="(min-width: 768px)"  srcset="img/about-gym-tablet@1x.jpg 1x, img/about-gym-tablet@2x.jpg 2x" width="678" height="345">
+            <img class="about__img" src="img/about-gym-mobile@1x.jpg" srcset="img/about-gym-mobile@2x.jpg 2x" width="320" height="280" alt="Тренажерный зал">
+          </picture>
+        </div>
         <!-- Здесь будет видео -->
+
+
+
       </section>
 
       <section class="price" data-test="price">
@@ -642,6 +650,11 @@
           </a>
         </li>
       </ul>
+
+      <picture>
+        <source type="image/jpg" media="(min-width: 768px)" srcset="img/hero-man-desktop.jpg 1x, img/hero-man-desktop@2x.jpg" width="500" height="524">
+        <img src="img/hero-man-tablet.jpg" src="img/hero-man-tablet@2x.jpg 2x" width="324" height="390" alt="Тренер фитнес центра">
+      </picture>
     </footer>
 
 

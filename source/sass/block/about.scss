@@ -95,3 +95,25 @@
     display: inline;
   }
 }
+
+.about__visual-content {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width:$tablet-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.about__img {
+  width: 320px;
+
+  @media (min-width:$tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 660px;
+  }
+}

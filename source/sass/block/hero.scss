@@ -18,12 +18,30 @@
   @media (min-width:$tablet-width) {
     padding-top: 31px;
     padding-bottom: 31px;
+    background-image: image-set(
+      url("../img/hero-man-tablet@1x.webp") type("image/webp") 1x,
+      url("../img/hero-man-tablet@2x.webp") type("image/webp") 2x,
+      url("../img/hero-man-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../img/hero-man-tablet@2x.jpg") type("image/jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-size: 324px 390px;
+    background-position: right 45px top;
   }
 
   @media (min-width:$desktop-width) {
     padding-top: 52px;
     padding-bottom: 52px;
     padding-left: 250px;
+    background-image: image-set(
+      url("../img/hero-man-desktop@1x.webp") type("image/webp") 1x,
+      url("../img/hero-man-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/hero-man-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../img/hero-man-desktop@2x.jpg") type("image/jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-size: 500px 524px;
+    background-position: right 175px top;
   }
 }
 
