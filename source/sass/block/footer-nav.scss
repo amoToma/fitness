@@ -1,0 +1,33 @@
+.footer-nav__list {
+  @include list;
+
+  display: flex;
+  column-gap: 35px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 30px;
+    max-width: 443px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 82px;
+    max-width: 800px;
+  }
+}
+
+.footer-nav__link {
+  @include link;
+
+  color: $text-color-light;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}

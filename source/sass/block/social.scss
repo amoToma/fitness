@@ -1,0 +1,35 @@
+.social {
+  @include list;
+
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+    max-width: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
+}
+
+.social__link {
+  @include link;
+
+  height: 25px;
+  width: 25px;
+  background-color: $base-background;
+  border-radius: 50%;
+}
+
+
+.social__icon {
+  height: 25px;
+  width: 25px;
+  color: $base-background;
+  fill: $dark-background;
+}
+
+
