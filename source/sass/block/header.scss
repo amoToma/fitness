@@ -2,7 +2,8 @@
   min-height: 54px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     min-height: 84px;
@@ -20,4 +21,49 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.header__tel-container {
+  max-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+
+  @media (min-width: $tablet-width) {
+    max-width: 550px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 950px;
+  }
+}
+
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  box-sizing: content-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
