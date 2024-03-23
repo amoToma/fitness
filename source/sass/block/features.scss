@@ -1,0 +1,134 @@
+
+.features {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-background;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.features__list {
+  @include list;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+.features__title {
+  width: 320px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 40px;
+}
+
+.features__item {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}
+
+.features__item--accent {
+  min-width: 320px;
+  width: 100vw;
+  padding: 0;
+  background-color: $medium-background;
+  margin: 5px 0 40px;
+
+  & span {
+    color: $text-color-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.features__accent-container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 15px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-color-light;
+
+
+}
+
+.features__item h3 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.features__item p {
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.features__item b {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.features__item span {
+  line-height: 20px;
+  color: $text-color-accent;
+  margin-bottom: 12px;
+}
+
+
+.features__item div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__item--accent span {
+  color: $text-color-light;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.features__item--accent b {
+  margin-bottom: 5px;
+}
