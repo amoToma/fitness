@@ -571,42 +571,45 @@
 
 
 
-      <div class="" data-test="form">
-        <section class="form">
-          <h2 class="form__title page__title">
-            Бесплатное занятие
-          </h2>
-          <form  action="https://echo.htmlacademy.ru/" method="get">
-            <label for="name">Имя</label>
-            <input id="name" type="text" name="name" placeholder="Имя" required>
+      <div class="form-contacts" data-test="form">
+        <div class="form-contacts__form form">
+          <section class="form__info">
+            <h2 class="form__title page__title">
+              Бесплатное занятие
+            </h2>
+            <form class="form__info-input" action="https://echo.htmlacademy.ru/" method="get">
 
-            <label for="tel">Телефон</label>
-            <input id="tel" type="tel" name="telephone" placeholder="Телефон" required>
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя" required>
 
-            <button type="submit">Отправить</button>
-          </form>
-        </section>
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input class="form__input" id="tel" type="tel" name="telephone" placeholder="Телефон" required>
 
-        <section class="contacts">
+              <button class="form__button button" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+
+        <section class="form-contacts__contacts contacts">
           <h2 class="contacts__title page__title">
             Контакты
           </h2>
-          <ul>
-            <li>
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--1">
+              <h3 class="contacts__item-title">Адрес:</h3>
+              <p class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</p>
             </li>
-            <li>
-              <h3>График работы:</h3>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
+            <li class="contacts__item contacts__item--2">
+              <h3 class="contacts__item-title">График работы:</h3>
+              <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
             </li>
-            <li>
-              <h3>Телефон:</h3>
-              <a href="tel:+78005555555">8 800 555-55-55</a>
+            <li class="contacts__item contacts__item--3">
+              <h3 class="contacts__item-title">Телефон:</h3>
+              <a class="contacts__item-info" href="tel:+78005555555">8 800 555-55-55</a>
             </li>
-            <li>
-              <h3>Email:</h3>
-              <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            <li class="contacts__item contacts__item--4">
+              <h3 class="contacts__item-title">Email:</h3>
+              <a class="contacts__item-info" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
             </li>
           </ul>
         </section>

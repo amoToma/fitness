@@ -1,0 +1,102 @@
+.form {
+  background-color: $secondary-medium-background;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.form__info {
+  color: $text-color-light;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+}
+
+.form__info-input {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+ .form__button {
+  color: $text-color-light;
+  background-color: $secondary-medium-background;
+  border: solid 2px $border-light;
+  padding: 22px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+ }
+
+ .form__input {
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $text-color-light;
+  margin-bottom: 36px;
+  background: transparent;
+  height: 27px;
+  border: none;
+  border-bottom: solid 1px $border-neutral;
+  padding: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+ }
+
+ .form__input::placeholder{
+  color: $text-color-light;
+  opacity: 40%;
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+ }
+
+ .form__title {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+ }
