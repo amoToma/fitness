@@ -93,7 +93,6 @@
       url("../img/offers-girl-tablet@1x.jpg") type("image/jpg") 1x,
       url("../img/offers-girl-tablet@1x.jpg") type("image/jpg") 2x,
     );
-    background-repeat: no-repeat;
     background-size: 400px 462px;
     background-position: top right;
   }
@@ -111,9 +110,7 @@
       url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 1x,
       url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 2x,
     );
-    background-repeat: no-repeat;
     background-size: 280px 460px;
-    background-position: top right;
   }
 }
 
