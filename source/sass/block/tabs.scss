@@ -4,6 +4,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: solid 1px #dedfe2;
+  margin-bottom: 30px;
+
+  @media (min-width:$tablet-width) {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 350px;
+    margin-bottom: 40px;
+  }
 }
 
 .tabs__navigation-link {
@@ -14,31 +28,34 @@
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 18px;
-}
 
-.tabs__navigation {
-  border-bottom: solid 1px #dedfe2;
-}
+  @media (min-width:$tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
 
-.tabs__card {
-  background-color: $base-background;
-  padding: 50px 42px;
-  text-align: center;
+  @media (min-width:$desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .tabs__cards-list {
   @include list;
 
-  padding-top: 30px;
-  padding-bottom: 40px;
   display: grid;
   gap: 35px;
 
   @media (min-width:$tablet-width) {
     gap: 40px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width:$desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
   }
 }

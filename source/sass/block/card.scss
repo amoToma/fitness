@@ -1,7 +1,125 @@
+.card {
+  background-color: $base-background;
+  padding: 50px 42px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width:$tablet-width) {
+    padding: 65px;
+  }
+}
+
 .card__title {
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
   margin: 0;
   margin-bottom: 18px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width:$desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+}
+
+.card__intro {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 18px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.card__price {
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #103aae;
+
+  @media (min-width:$tablet-width) {
+    font-size: 60px;
+    line-height: 150%;
+  }
+}
+
+.card__link {
+  width: 100%;
+  padding: 25px;
+  border: solid 2px $border-dark;
+  color: $text-color;
+
+  @media (min-width:$tablet-width) {
+    padding: 27px;
+  }
+}
+
+.card__price-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 69px;
+  padding-bottom: 9px;
+  margin-bottom: 18px;
+
+  @media (min-width:$tablet-width) {
+    gap: 14px;
+    padding-bottom: 0;
+    padding-top: 60px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.card__background {
+  display: block;
+  position: absolute;
+  font-size: 80px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #f4f4f4;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width:$tablet-width) {
+    font-size: 100px;
+    line-height: 150%;
+  }
+}
+
+.card__price-icon {
+  display: block;
+  width: 24px;
+  height: 33px;
+  background-image: url("/__spritemap#sprite-ruble-icon-view");
+
+  @media (min-width:$tablet-width) {
+    width: 30px;
+    height: 42px;
+  }
 }
