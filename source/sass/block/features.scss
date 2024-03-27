@@ -184,6 +184,10 @@
   font-size: 64px;
   line-height: 64px;
   font-weight: 700;
+  background: linear-gradient(142deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (min-width: $tablet-width) {
     font-size: 70px;
@@ -249,6 +253,8 @@
 
 .features__item--accent b {
   margin-bottom: 5px;
+  background: none;
+  -webkit-text-fill-color: $text-color-light;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
