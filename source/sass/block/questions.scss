@@ -1,0 +1,6 @@
+.questions__list {
+  @include list;
+
+  display: flex;
+  flex-direction: column;
+}

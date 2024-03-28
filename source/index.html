@@ -238,29 +238,37 @@
             <li class="juri__item">
               <h3 class="juri__item-title">Анна Павлова</h3>
               <picture>
-                <source type="image/webp" srcset="img/juri-alex-pashkov@1x.webp 1x, img/juri-alex-pashkov@2x.webp 2x" width="227" height="280">
-                <img class="juri__photo" src="img/juri-alex-pashkov@1x.jpg" srcset="img/juri-alex-pashkov@2x.jpg 2x" width="227" height="280" alt="Анна Павлова.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-anna-pavlova-tablet@1x.webp 1x, img/juri-anna-pavlova-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-anna-pavlova-mobile@1x.webp 1x, img/juri-anna-pavlova-mobile@2x.webp 2x" width="260" height="300">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/juri-anna-pavlova-tablet@1x.jpg 1x, img/juri-anna-pavlova-tablet@2x.jpg 2x" width="260" height="300">
+                <img class="juri__photo" src="img/juri-anna-pavlova-mobile@1x.jpg" srcset="img/juri-anna-pavlova-mobile@2x.jpg 2x" width="227" height="280" alt="Анна Павлова.">
               </picture>
             </li>
             <li class="juri__item">
               <h3 class="juri__item-title">Алексей Лавров</h3>
               <picture>
-                <source type="image/webp" srcset="img/juri-alex-pashkov@1x.webp 1x, img/juri-alex-pashkov@2x.webp 2x" width="227" height="280">
-                <img class="juri__photo" src="img/juri-alex-pashkov@1x.jpg" srcset="img/juri-alex-pashkov@2x.jpg 2x" width="227" height="280" alt="Алексей Лавров.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-alexei-lavrov-tablet@1x.webp 1x, img/juri-alexei-lavrov-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-alexei-lavrov-mobile@1x.webp 1x, img/juri-alexei-lavrov-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/juri-alexei-lavrov-tablet@1x.jpg 1x, img/juri-alexei-lavrov-tablet@2x.jpg 2x" width="260" height="300">
+                <img class="juri__photo" src="img/juri-alexei-lavrov-mobile@1x.jpg" srcset="img/juri-alexei-lavrov-mobile@2x.jpg 2x" width="227" height="280" alt="Алексей Лавров.">
               </picture>
             </li>
             <li class="juri__item">
               <h3 class="juri__item-title">Александр Пашков</h3>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-alexandr-pashkov-tablet@1x.webp 1x, img/juri-alexandr-pashkov-tablet@2x.webp 2x" width="260" height="300">
                 <source type="image/webp" srcset="img/juri-alex-pashkov@1x.webp 1x, img/juri-alex-pashkov@2x.webp 2x" width="227" height="280">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/juri-alexandr-pashkov-tablet@1x.jpg 1x, img/juri-alexandr-pashkov-tablet@2x.jpg 2x" width="260" height="300">
                 <img class="juri__photo" src="img/juri-alex-pashkov@1x.jpg" srcset="img/juri-alex-pashkov@2x.jpg 2x" width="227" height="280" alt="Александр Пашков.">
               </picture>
             </li>
             <li class="juri__item">
               <h3 class="juri__item-title">Мария Кетова</h3>
               <picture>
-                <source type="image/webp" srcset="img/juri-alex-pashkov@1x.webp 1x, img/juri-alex-pashkov@2x.webp 2x" width="227" height="280">
-                <img class="juri__photo" src="img/juri-alex-pashkov@1x.jpg" srcset="img/juri-alex-pashkov@2x.jpg 2x" width="227" height="280" alt="Мария Кетова.">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/juri-maria-ketova-tablet@1x.webp 1x, img/juri-maria-ketova-tablet@2x.webp 2x" width="260" height="300">
+                <source type="image/webp" srcset="img/juri-maria-ketova-mobile@1x.webp 1x, img/juri-maria-ketova-mobile@2x.webp 2x" width="227" height="280">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/juri-maria-ketova-tablet@1x.jpg 1x, img/juri-maria-ketova-tablet@2x.jpg 2x" width="260" height="300">
+                <img class="juri__photo" src="img/juri-maria-ketova-mobile@1x.jpg" srcset="img/juri-maria-ketova-mobile@2x.jpg 2x" width="227" height="280" alt="Мария Кетова.">
               </picture>
             </li>
           </ul>
@@ -371,216 +379,220 @@
       </section>
 
       <section class="faq" data-test="faq">
-        <h2 class="faq__title page__title">Вопросы и ответы</h2>
-        <ul>
-          <li>
-            <button type="button">Центр</button>
-          </li>
-          <li>
-            <button type="button">Абонемент</button>
-          </li>
-          <li>
-            <button type="button">Услуги</button>
-          </li>
-          <li>
-            <button type="button">Правила</button>
-          </li>
-        </ul>
+        <div class="faq__container container">
+          <h2 class="faq__title page__title">Вопросы и ответы</h2>
+          <div class="faq__info-container">
+            <ul class="faq__navigation-list">
+            <li class="faq__nav-item">
+              <button class="faq__nav-button" type="button">Центр</button>
+            </li>
+            <li class="faq__nav-item">
+              <button class="faq__nav-button" type="button">Абонемент</button>
+            </li>
+            <li class="faq__nav-item">
+              <button class="faq__nav-button" type="button">Услуги</button>
+            </li>
+            <li class="faq__nav-item">
+              <button class="faq__nav-button" type="button">Правила</button>
+            </li>
+            </ul>
 
-        <div>
-          <ul>
-            <li>
-              <h3>
-                Как стать членом фитнес-центра?
-              </h3>
-              <p>
-                При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Где можно посмотреть расписание?
-              </h3>
-              <p>
-                При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Есть кулеры в центре? Предоставляются полотенца?
-              </h3>
-              <p>
-                При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Сколько тренеров работает в клубе и какова  их квалификация?
-              </h3>
-              <p>
-                При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-          </ul>
-        </div>
+            <div class="faq__questions questions">
+              <ul class="questions__list">
+                <li class="questions__item">
+                  <h3>
+                    Как стать членом фитнес-центра?
+                  </h3>
+                  <p>
+                    При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Где можно посмотреть расписание?
+                  </h3>
+                  <p>
+                    При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Есть кулеры в центре? Предоставляются полотенца?
+                  </h3>
+                  <p>
+                    При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Сколько тренеров работает в клубе и какова  их квалификация?
+                  </h3>
+                  <p>
+                    При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
 
-        <div>
-          <ul>
-            <li>
-              <h3>
-                Занятия с тренером входят в абонемент?
-              </h3>
-              <p>
-                При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Можно ли заморозить абонемент?
-              </h3>
-              <p>
-                При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Есть ли лимит по посещениям тренажерного зала и групповых занятий?
-              </h3>
-              <p>
-                При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Что такое семейный доступ и доступ для друзей?
-              </h3>
-              <p>
-                При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-          </ul>
-        </div>
+            <div class="faq__questions questions">
+              <ul class="questions__list">
+                <li class="questions__item">
+                  <h3>
+                    Занятия с тренером входят в абонемент?
+                  </h3>
+                  <p>
+                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Можно ли заморозить абонемент?
+                  </h3>
+                  <p>
+                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                  </h3>
+                  <p>
+                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Что такое семейный доступ и доступ для друзей?
+                  </h3>
+                  <p>
+                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
 
-        <div>
-          <ul>
-            <li>
-              <h3>
-                Предлагает ли клуб услуги по консультированию по вопросам питания?
-              </h3>
-              <p>
-                Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Проводятся ли в клубе какие-либо мероприятия или соревнования?
-              </h3>
-              <p>
-                Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Можно ли приобрести в центре спортивное питание?
-              </h3>
-              <p>
-                Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Есть ли в центре детская комната?
-              </h3>
-              <p>
-                Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-          </ul>
-        </div>
+            <div class="faq__questions questions">
+              <ul class="questions__list">
+                <li class="questions__item">
+                  <h3>
+                    Предлагает ли клуб услуги по консультированию по вопросам питания?
+                  </h3>
+                  <p>
+                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Проводятся ли в клубе какие-либо мероприятия или соревнования?
+                  </h3>
+                  <p>
+                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Можно ли приобрести в центре спортивное питание?
+                  </h3>
+                  <p>
+                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Есть ли в центре детская комната?
+                  </h3>
+                  <p>
+                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
 
-        <div>
-          <ul>
-            <li>
-              <h3>
-                Есть в фитнес-центре дресс-код?
-              </h3>
-              <p>
-                Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Можно ли приводить с собой детей на тренировки?
-              </h3>
-              <p>
-                Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Какие дополнительные правила посещения центра?
-              </h3>
-              <p>
-                Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-            <li>
-              <h3>
-                Нужна ли медицинская справка для посещения залов и бассейна?
-              </h3>
-              <p>
-                Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-              </p>
-              <button type="button">
-                <span class="visually-hidden">Показать или скрыть ответ</span>
-              </button>
-            </li>
-          </ul>
+            <div class="faq__questions questions">
+              <ul class="questions__list">
+                <li class="questions__item">
+                  <h3>
+                    Есть в фитнес-центре дресс-код?
+                  </h3>
+                  <p>
+                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Можно ли приводить с собой детей на тренировки?
+                  </h3>
+                  <p>
+                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Какие дополнительные правила посещения центра?
+                  </h3>
+                  <p>
+                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+                <li class="questions__item">
+                  <h3>
+                    Нужна ли медицинская справка для посещения залов и бассейна?
+                  </h3>
+                  <p>
+                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                  </p>
+                  <button class="questions__button" type="button">
+                    <span class="visually-hidden">Показать или скрыть ответ</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
