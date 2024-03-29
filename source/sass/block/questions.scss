@@ -1,6 +1,125 @@
+.questions {
+  display: flex;
+  flex-direction: column
+}
+
 .questions__list {
   @include list;
 
   display: flex;
   flex-direction: column;
+}
+
+.questions__item {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  border-bottom: solid $border-neutral 1px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    column-gap: 80px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    column-gap: 150px;
+    row-gap: 23px;
+  }
+
+  &:first-child {
+    border-top: solid $border-neutral 1px;
+  }
+}
+
+.questions__button {
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid #1c3374 1px;
+  background: transparent;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.questions__button::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 1px;
+  background-color: #1c3374;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 1px;
+  }
+}
+
+.questions__button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #1c3374;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 1px;
+    height: 20px;
+  }
+}
+
+.questions__item p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-end: 2;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.questions__item h3 {
+  margin: 0;
+  //align-self: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
