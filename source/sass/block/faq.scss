@@ -57,13 +57,43 @@
   color: $text-color;
   font-size: 16px;
   line-height: 16px;
-  padding: 14px;
+  padding: 15px;
   background: transparent;
-  border: solid #c9cfdb 1px;
+  box-shadow: inset 0 0 0 1px #c9cfdb;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
     padding: 18px;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $border-dark;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $base-background;
+    box-shadow: inset 0 0 0 1px $border-dark;
+  }
+
+  &:active {
+    color: $text-color-light;
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    box-shadow: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    box-shadow: inset 0 0 0 1px $border-dark;
+    pointer-events: none;
+  }
+
+  &--current {
+    color: $text-color-light;
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    box-shadow: none;
   }
 }

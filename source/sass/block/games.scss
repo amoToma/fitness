@@ -116,6 +116,29 @@
   @media (min-width: $tablet-width) {
     padding: 27px;
   }
+
+  &:hover {
+    background-color: $base-background;
+    color: #103aae;
+  }
+
+  &:focus {
+    border: solid 2px #000000;
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    color: #103aae;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $base-background;
+    color: $text-color;
+  }
+
+  &--disabled {
+    opacity: 50%;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+    pointer-events: none;
+  }
 }
 
 .games__date-container {

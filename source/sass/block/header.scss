@@ -2,7 +2,6 @@
   min-height: 54px;
   display: flex;
   justify-content: space-between;
-  //align-items: center;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +15,7 @@
 
 .header__tel {
   @include link;
+
 
   color: $text-color-light;
   font-weight: 700;
@@ -35,9 +35,48 @@
     font-size: 26px;
     line-height: 26px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $border-dark;
+    opacity: 0;
+    bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 24px;
+    }
+  }
+
+  &:hover {
+    opacity: 50%;
+    color: #1c3374;
+  }
+
+  &:focus {
+    color: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    color: $text-color;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+
+  &--disabled {
+    color: #f8f9fc;
+    pointer-events: none;
+  }
 }
 
 .header__tel-container {
+  position: relative;
   max-width: 170px;
   display: flex;
   flex-wrap: wrap;

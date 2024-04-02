@@ -157,17 +157,11 @@
 .offers__item--accent h3 {
   color: $text-color-light;
   width: 130px;
-  //text-align: center;
-  //margin: 0;
   margin-bottom: 28px;
-  // font-size: 22px;
-  // font-weight: 700;
-  // line-height: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    //text-align: start;
     width: 142px;
     margin-bottom: 40px;
   }
@@ -190,7 +184,6 @@
     font-size: 16px;
     line-height: 24px;
     text-align: start;
-    //margin-bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -200,18 +193,10 @@
 
 .offers__item--accent p {
   color: $text-color-light;
-  // font-size: 16px;
-  // line-height: 20px;
-  // font-weight: 300;
-  // text-align: center;
-  //margin: 0;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    //line-height: 24px;
-    //text-align: start;
-    //margin-bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -236,23 +221,81 @@
 .offers__link {
   @include link;
 
+  position: relative;
   color: $text-color;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
-  padding-bottom: 5px;
-  border-bottom: solid $text-color 1px;
+  padding-bottom: 6px;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $border-dark;
+    bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-top: auto;
+    text-align: start;
+  }
+
+  &:hover,
+  &:hover::after {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::after {
+    width: calc(100% + 20px);
+    height: calc(100% + 14px);
+    background: transparent;
+    border: solid 1px $border-dark;
+    left: 50%;
+    top: calc(50% - 4px);
+    transform: translate(-50%, -50%);
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--light-disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
 
 .offers__link--accent {
+  position: relative;
   color: $text-color-light;
-  border-bottom: solid $text-color-light 1px;
+
+  &::after {
+    background-color: $border-light;
+  }
+
+  &:hover,
+  &:hover::after {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::after {
+    border: solid 1px $border-light;
+  }
 }
 
 .offers__title {

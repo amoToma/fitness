@@ -15,6 +15,7 @@
         <header class="hero__header container header">
           <img class="header__logo logo" src="/__spritemap#sprite-logo-mobile-view"  alt="Логотип фитнес центра Supergim.">
           <div class="header__tel-container">
+            <!-- для деактивации ссылки добавить класс header__tel--disabled -->
             <a class="header__tel" href="tel:+78005555555">8 800 555-55-55</a>
           </div>
         </header>
@@ -36,6 +37,7 @@
                 <p class="hero__title-intro">Омск</p>
                 <h2 class="hero__title">Фитнес центр</h2>
               </div>
+            <!-- для деактивации ссылки добавить класс hero__button--disabled -->
             <a class="hero__button button" href="#tickets">Купить абонемент</a>
           </div>
         </div>
@@ -77,13 +79,13 @@
         <div class="price__tabs tabs container">
           <ul class="tabs__navigation">
             <li class="tabs__navigation-item">
-              <a class="tabs__navigation-link" href="/">1 месяц</a>
+              <button class="tabs__navigation-button tabs__navigation-button--current" type="button">1 месяц</a>
             </li>
             <li class="tabs__navigation-item">
-              <a class="tabs__navigation-link" href="/">6 месяцев</a>
+              <button class="tabs__navigation-button" type="button">6 месяцев</a>
             </li>
             <li class="tabs__navigation-item">
-              <a class="tabs__navigation-link" href="/">12 месяцев</a>
+              <button class="tabs__navigation-button" type="button">12 месяцев</a>
             </li>
           </ul>
 
@@ -96,6 +98,7 @@
                 <span class="card__price">5000</span>
                 <span class="card__price-icon"></span>
               </div>
+              <!-- для деактивации ссылки добавить класс card__link--disabled -->
               <a class="card__link button" href="/">
                 Купить абонемент
               </a>
@@ -108,6 +111,7 @@
                 <span class="card__price">1700</span>
                 <span class="card__price-icon"></span>
               </div>
+              <!-- для деактивации ссылки добавить класс card__link--disabled -->
               <a class="card__link button" href="/">
                 Купить абонемент
               </a>
@@ -120,6 +124,7 @@
                 <span class="card__price">2700</span>
                 <span class="card__price-icon"></span>
               </div>
+              <!-- для деактивации ссылки добавить класс card__link--disabled -->
               <a class="card__link button" href="/">
                 Купить абонемент
               </a>
@@ -135,6 +140,7 @@
                   <span class="card__price">30000</span>
                   <span class="card__price-icon"></span>
                 </div>
+                <!-- для деактивации ссылки добавить класс card__link--disabled -->
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -147,6 +153,7 @@
                   <span class="card__price">10200</span>
                   <span class="card__price-icon"></span>
                 </div>
+                <!-- для деактивации ссылки добавить класс card__link--disabled -->
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -159,6 +166,7 @@
                   <span class="card__price">16200</span>
                   <span class="card__price-icon"></span>
                 </div>
+                <!-- для деактивации ссылки добавить класс card__link--disabled -->
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -173,6 +181,7 @@
                   <span class="card__price">60000</span>
                   <span class="card__price-icon"></span>
                 </div>
+                <!-- для деактивации ссылки добавить класс card__link--disabled -->
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -185,6 +194,7 @@
                   <span class="card__price">20400</span>
                   <span class="card__price-icon"></span>
                 </div>
+                <!-- для деактивации ссылки добавить класс card__link--disabled -->
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -197,6 +207,7 @@
                   <span class="card__price">32400</span>
                   <span class="card__price-icon"></span>
                 </div>
+                <!-- для деактивации ссылки добавить класс card__link--disabled -->
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -226,10 +237,10 @@
               <p class="games__intro">
                 Ежегодные соревнования по CrossFit
               </p>
+              <!-- для деактивации ссылки добавить класс games__link--disabled -->
               <a class="games__link button" href="/">Заполнить заявку</a>
             </div>
           </div>
-          <!--<img src="/" width="" height="" alt="Участник соревнования.">-->
         </section>
 
         <section class="games__juri juri container" data-test="juri">
@@ -438,17 +449,20 @@
               <p>
                 Безлимитный абонемент в тренажёрный зал
               </p>
+              <!-- для деактивации ссылки добавить класс offers__link--disabled -->
               <a class="offers__link offers__link--accent" href="/">Подробнее</a>
             </div>
           </li>
           <li class="offers__item">
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
+            <!-- для деактивации ссылки добавить класс offers__link--light-disabled -->
             <a class="offers__link" href="/">Подробнее</a>
           </li>
           <li class="offers__item">
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
+            <!-- для деактивации ссылки добавить класс offers__link--light-disabled -->
             <a class="offers__link" href="/">Подробнее</a>
           </li>
         </ul>
@@ -460,7 +474,7 @@
           <div class="faq__info-container">
             <ul class="faq__navigation-list">
             <li class="faq__nav-item">
-              <button class="faq__nav-button" type="button">Центр</button>
+              <button class="faq__nav-button faq__nav-button--current" type="button">Центр</button>
             </li>
             <li class="faq__nav-item">
               <button class="faq__nav-button" type="button">Абонемент</button>
@@ -482,7 +496,7 @@
                   <p>
                     При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
                   </p>
-                  <button class="questions__button" type="button">
+                  <button class="questions__button questions__button--open" type="button">
                     <span class="visually-hidden">Показать или скрыть ответ</span>
                   </button>
                 </li>
@@ -757,18 +771,23 @@
         <nav class="footer__navigation footer-nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
+              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Услуги</a>
             </li>
             <li class="footer-nav__item">
+              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Абонементы</a>
             </li>
             <li class="footer-nav__item">
+              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Акции</a>
             </li>
             <li class="footer-nav__item">
+              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Тренеры</a>
             </li>
             <li class="footer-nav__item">
+              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Расписание</a>
             </li>
           </ul>
@@ -776,6 +795,7 @@
 
         <ul class="footer__social social">
           <li class="social__item">
+            <!-- для деактивации ссылки добавить класс social__link--disabled -->
             <a class="social__link" href="/">
               <svg class="social__icon">
                 <use href="/__spritemap#sprite-icon-vk"></use>
@@ -784,6 +804,7 @@
             </a>
           </li>
           <li class="social__item">
+            <!-- для деактивации ссылки добавить класс social__link--disabled -->
             <a class="social__link" href="/">
               <svg class="social__icon">
                 <use href="/__spritemap#sprite-icon-ok"></use>
@@ -792,6 +813,7 @@
             </a>
           </li>
           <li class="social__item">
+            <!-- для деактивации ссылки добавить класс social__link--disabled -->
             <a class="social__link" href="/">
               <svg class="social__icon">
                 <use href="/__spritemap#sprite-icon-reddit"></use>

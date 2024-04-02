@@ -51,12 +51,40 @@
  .form__button {
   color: $text-color-light;
   background-color: $secondary-medium-background;
-  border: solid 2px $border-light;
+  border: none;
+  box-shadow: inset  0 0 0 2px $border-light;
   padding: 22px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  &:hover {
+    color: $text-color-light;
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    box-shadow: none;
+  }
+
+  &:focus {
+    color: $text-color-light;
+    outline: none;
+    box-shadow: inset  0 0 0 1px #000000, 0 0 0 1px #000000;
+    background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+  }
+
+  &:active {
+    color: rgba($color: $text-color-light, $alpha: 0.7);
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    box-shadow: none;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+    color: rgba($color: $border-dark, $alpha: 0.3);
+    box-shadow: inset  0 0 0 1px $border-dark, 0 0 0 1px $border-dark;
+    background: transparent;
+    pointer-events: none;
   }
  }
 
@@ -68,13 +96,41 @@
   color: $text-color-light;
   margin-bottom: 36px;
   background: transparent;
-  height: 27px;
+  height: 36px;
   border: none;
   border-bottom: solid 1px $border-neutral;
-  padding: 0 0 4px;
+  padding: 5px 4px 4px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  &:hover {
+    border-color: $border-light;
+  }
+
+  &:focus {
+    outline: none;
+    border: solid 1px $border-light;
+    padding: 4px 3px 4px;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+
+  &:disabled {
+    border-color: $border-light;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  &:disabled::placeholder {
+    opacity: 1;
+  }
+
+  &--error {
+    border-color: #ff121f;
   }
  }
 
