@@ -91,7 +91,8 @@
     pointer-events: none;
   }
 
-  &--current {
+  &--current,
+  &--current:focus {
     color: $text-color-light;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     box-shadow: none;
