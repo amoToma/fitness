@@ -79,7 +79,8 @@
     opacity: 0.3;
   }
 
-  &--current {
+  &--current,
+  &--current:focus {
     color: $text-color;
     border-color: $border-accent;
   }
