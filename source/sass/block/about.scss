@@ -103,17 +103,26 @@
   @media (min-width:$tablet-width) {
     width: auto;
     margin: 0;
+    position: relative;
   }
 }
 
 .about__img {
   width: 320px;
+  margin-bottom: 36px;
 
   @media (min-width:$tablet-width) {
     width: 678px;
+    margin-bottom: 0;
   }
 
   @media (min-width:$desktop-width) {
     width: 660px;
   }
 }
+
+// .about__video-container {
+//   @media (min-width:$tablet-width) {
+//     position: absolute;
+//   }
+// }

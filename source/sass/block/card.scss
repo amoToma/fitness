@@ -17,6 +17,12 @@
     border-image: linear-gradient(142deg, #d10a42 0%, #00359f 100%);
     border-image-slice: 1;
   }
+
+  &:hover .card__link {
+    color: $text-color-light;
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    box-shadow: none;
+  }
 }
 
 .card__title {
