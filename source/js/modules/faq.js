@@ -11,7 +11,6 @@ const showQuestionsBlock = (index) => {
   blocksQuestions[index].style.display = 'flex';
 };
 
-
 const showCurrentButton = (index) => {
   faqButtons.forEach((item) => item.classList.remove('faq__nav-button--current'));
   faqButtons[index].classList.add('faq__nav-button--current');

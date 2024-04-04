@@ -14,6 +14,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 40px;
+    width: 100%;
   }
 }
 
@@ -73,7 +74,7 @@
     box-shadow: inset 0 0 0 1px $border-dark;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     background-color: $base-background;
     box-shadow: inset 0 0 0 1px $border-dark;
@@ -91,10 +92,17 @@
     pointer-events: none;
   }
 
-  &--current,
-  &--current:focus {
+  &--current {
     color: $text-color-light;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     box-shadow: none;
   }
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
 }

@@ -62,7 +62,7 @@
     border-color: rgba($color: #787878, $alpha: 1.0);
   }
 
-  &:focus {
+  &:focus-visible {
     color: $text-color;
     border-color: $border-dark;
     outline: none;
@@ -79,8 +79,7 @@
     opacity: 0.3;
   }
 
-  &--current,
-  &--current:focus {
+  &--current {
     color: $text-color;
     border-color: $border-accent;
   }
