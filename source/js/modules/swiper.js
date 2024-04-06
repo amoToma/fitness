@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const juriSwiper = new Swiper('.swiper', {
+const juriSwiper = new Swiper('.swiper__juri', {
   direction: 'horizontal',
   loop: true,
   modules: [ Navigation ],
@@ -30,5 +30,23 @@ const juriSwiper = new Swiper('.swiper', {
   }
 });
 
-export { juriSwiper };
+const reviewsSwiper = new Swiper('.swiper__reviews', {
+  direction: 'horizontal',
+  loop: true,
+  modules: [ Navigation ],
+
+  navigation: {
+    prevEl: '.swiper-button--prev',
+    nextEl: '.swiper-button--next',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  }
+});
+
+export { juriSwiper, reviewsSwiper };
 

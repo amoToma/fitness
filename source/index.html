@@ -258,7 +258,7 @@
         <section class="games__juri juri container" data-test="juri">
           <h2 class="juri__title page__title">Жюри</h2>
           <div class="juri__swiper-container">
-            <div class="juri__swiper swiper">
+            <div class="juri__swiper swiper swiper__juri">
               <ul class="juri__list swiper-wrapper">
                 <li class="juri__item swiper-slide">
                 <h3 class="juri__item-title">Анна Павлова</h3>
@@ -904,7 +904,23 @@
       <section class="reviews container" data-test="reviews">
         <h2 class="reviews__title page__title">Отзывы</h2>
         <div class="reviews__swiper-container">
-        <div class="reviews__container">
+          <div class="reviews__swiper swiper swiper__reviews">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.webp 1x, img/reviews-avatar-tablet@2x.webp 2x" width="80" height="80">
+                  <source type="image/webp" srcset="img/reviews-avatar-mobile@1x.webp 1x, img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68">
+                  <source type="image/jpg" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.jpg 1x, img/reviews-avatar-tablet@2x.jpg 2x" width="80" height="80">
+                  <img src="img/reviews-avatar-mobile@1x.jpg" srcset="img/reviews-avatar-mobile@2x.jpg" width="68" height="68" alt="Анна Орлова">
+                </picture>
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+              </li>
+              <li class="reviews__item swiper-slide">
           <picture>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.webp 1x, img/reviews-avatar-tablet@2x.webp 2x" width="80" height="80">
             <source type="image/webp" srcset="img/reviews-avatar-mobile@1x.webp 1x, img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68">
@@ -917,34 +933,22 @@
               «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
             </p>
           </div>
-        </div>
-        <div class="reviews__container">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.webp 1x, img/reviews-avatar-tablet@2x.webp 2x" width="80" height="80">
-            <source type="image/webp" srcset="img/reviews-avatar-mobile@1x.webp 1x, img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68">
-            <source type="image/jpg" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.jpg 1x, img/reviews-avatar-tablet@2x.jpg 2x" width="80" height="80">
-            <img src="img/reviews-avatar-mobile@1x.jpg" srcset="img/reviews-avatar-mobile@2x.jpg" width="68" height="68" alt="Анна Орлова">
-          </picture>
-          <div>
-            <h3>Анна Орлова</h3>
-            <p>
-              «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-            </p>
+              </li>
+            </ul>
           </div>
+          <button class="reviews__button swiper-button swiper-button--prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+            <svg class="swiper-button__icon" width="17" height="32" viewBox="0 0 17 32">
+              <use href="/__spritemap#sprite-icon-prev"></use>
+            </svg>
+          </button>
+          <button class="reviews__button swiper-button swiper-button--next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+            <svg class="swiper-button__icon" width="17" height="32" viewBox="0 0 17 32">
+              <use href="/__spritemap#sprite-icon-next"></use>
+            </svg>
+          </button>
         </div>
-        <button class="reviews__button swiper-button swiper-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-          <svg class="swiper-button__icon" width="17" height="32" viewBox="0 0 17 32">
-            <use href="/__spritemap#sprite-icon-prev"></use>
-          </svg>
-        </button>
-        <button class="reviews__button swiper-button swiper-button--next" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-          <svg class="swiper-button__icon" width="17" height="32" viewBox="0 0 17 32">
-            <use href="/__spritemap#sprite-icon-next"></use>
-          </svg>
-        </button>
-      </div>
 
       </section>
 

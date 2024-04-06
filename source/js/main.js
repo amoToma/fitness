@@ -6,7 +6,7 @@ import { setupVideo } from './modules/video';
 import { showActiveTabs, showCardList, indexList } from './modules/price';
 import { showCurrentButton, showQuestionsBlock, blockIndex } from './modules/faq';
 import { openAccordion } from './modules/accordion';
-export { juriSwiper } from './modules/swiper';
+export { juriSwiper, reviewsSwiper } from './modules/swiper';
 
 setupVideo();
 showActiveTabs(indexList);

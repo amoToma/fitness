@@ -17,6 +17,10 @@
   }
 }
 
+.reviews__list {
+  @include list;
+}
+
 .reviews__title {
   text-align: center;
   margin-bottom: 40px;
@@ -30,7 +34,7 @@
   }
 }
 
-.reviews__container {
+.reviews__item {
   width: 240px;
   background-color: $medium-background;
   padding: 30px 25px;
@@ -56,7 +60,7 @@
   }
 }
 
-.reviews__container h3 {
+.reviews__item h3 {
   color: $text-color-light;
   font-size: 18px;
   line-height: 20px;
@@ -72,7 +76,7 @@
   }
 }
 
-.reviews__container p {
+.reviews__item p {
   color: $text-color-light;
   font-size: 14px;
   line-height: 22px;
@@ -88,7 +92,7 @@
   }
 }
 
-.reviews__container img {
+.reviews__item img {
   width: 68px;
   height: 68px;
   border-radius: 50%;

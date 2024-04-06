@@ -1,4 +1,4 @@
-.swiper {
+.swiper__juri {
   width: 227px;
 
   @media (min-width: $tablet-width) {
@@ -7,6 +7,18 @@
 
   @media (min-width: $desktop-width) {
     width: 1160px;
+  }
+}
+
+.swiper__reviews {
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
   }
 }
 
