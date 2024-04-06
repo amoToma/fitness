@@ -18,6 +18,11 @@
   }
 }
 
+.juri__swiper-container {
+  position: relative;
+  width: 100%;
+}
+
 .juri__title {
   text-align: center;
   margin-bottom: 20px;
@@ -48,6 +53,10 @@
 
 .juri__button {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .juri__photo {
@@ -62,7 +71,6 @@
 
 .juri__item {
   position: relative;
-
 
   &:hover .juri__current,
   &:focus .juri__current {

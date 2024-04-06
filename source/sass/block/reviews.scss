@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
@@ -36,6 +37,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -96,11 +99,20 @@
     height: 80px;
   }
 
-  @media (min-width: $desktop-width) {
+  // @media (min-width: $desktop-width) {
 
-  }
+  // }
+}
+
+.reviews__swiper-container {
+  position: relative;
+  width: 100%;
 }
 
 .reviews__button {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

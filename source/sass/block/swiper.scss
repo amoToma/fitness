@@ -10,14 +10,62 @@
   }
 }
 
-.swiper-button-next {
-  height: 50px;
-  width: 50px;
-  background-color: aqua;
+.swiper-button {
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &:hover {
+    border: solid 1px $border-dark;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    background-color: $secondary-medium-background;
+  }
+
+  &:active .swiper-button__icon {
+    stroke: $border-light;
+  }
 }
 
-.swiper-button-prev {
-  height: 50px;
-  width: 50px;
-  background-color: red;
+.swiper-button--next {
+  right: -17px;
+  stroke: $border-dark;
+
+  & .swiper-button__icon {
+    right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -74px;
+  }
+}
+
+.swiper-button--prev {
+  left: -17px;
+  stroke: $border-dark;
+
+  & .swiper-button__icon {
+    left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -74px;
+  }
+}
+
+.swiper-button__icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
