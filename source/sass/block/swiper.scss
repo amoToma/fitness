@@ -1,0 +1,23 @@
+.swiper {
+  width: 227px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+}
+
+.swiper-button-prev {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
