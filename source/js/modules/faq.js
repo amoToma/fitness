@@ -1,3 +1,5 @@
+import { openAccordion } from './accordion';
+
 const faq = document.querySelector('.faq');
 const faqButtons = Array.from(faq.querySelectorAll('.faq__nav-button'));
 const blocksQuestions = Array.from(faq.querySelectorAll('.questions__list'));
@@ -9,6 +11,7 @@ const showQuestionsBlock = (index) => {
     item.style.display = 'none';
   });
   blocksQuestions[index].style.display = 'flex';
+  openAccordion();
 };
 
 const showCurrentButton = (index) => {

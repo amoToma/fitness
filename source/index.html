@@ -15,7 +15,7 @@
         <header class="hero__header container header">
           <img class="header__logo logo" src="/__spritemap#sprite-logo-mobile-view"  alt="Логотип фитнес центра Supergim.">
           <div class="header__tel-container">
-            <!-- для деактивации ссылки добавить класс header__tel--disabled -->
+
             <a class="header__tel" href="tel:+78005555555">8 800 555-55-55</a>
           </div>
         </header>
@@ -37,7 +37,7 @@
                 <p class="hero__title-intro">Омск</p>
                 <h2 class="hero__title">Фитнес центр</h2>
               </div>
-            <!-- для деактивации ссылки добавить класс hero__button--disabled -->
+
             <a class="hero__button button" href="#tickets">Купить абонемент</a>
           </div>
         </div>
@@ -86,18 +86,19 @@
       </section>
 
       <section class="price" data-test="price">
-        <a id="tickets"></a>
-        <h2 class="price__title page__title">Абонементы</h2>
+        <a id="tickets">
+          <h2 class="price__title page__title">Абонементы</h2>
+        </a>
         <div class="price__tabs tabs container">
           <ul class="tabs__navigation">
             <li class="tabs__navigation-item">
-              <button class="tabs__navigation-button tabs__navigation-button--current" type="button">1 месяц</a>
+              <button class="tabs__navigation-button tabs__navigation-button--current" type="button">1 месяц</button>
             </li>
             <li class="tabs__navigation-item">
-              <button class="tabs__navigation-button" type="button">6 месяцев</a>
+              <button class="tabs__navigation-button" type="button">6 месяцев</button>
             </li>
             <li class="tabs__navigation-item">
-              <button class="tabs__navigation-button" type="button">12 месяцев</a>
+              <button class="tabs__navigation-button" type="button">12 месяцев</button>
             </li>
           </ul>
 
@@ -110,7 +111,7 @@
                 <span class="card__price">5000</span>
                 <span class="card__price-icon"></span>
               </div>
-              <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
               <a class="card__link button" href="/">
                 Купить абонемент
               </a>
@@ -123,7 +124,7 @@
                 <span class="card__price">1700</span>
                 <span class="card__price-icon"></span>
               </div>
-              <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
               <a class="card__link button" href="/">
                 Купить абонемент
               </a>
@@ -136,7 +137,7 @@
                 <span class="card__price">2700</span>
                 <span class="card__price-icon"></span>
               </div>
-              <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
               <a class="card__link button" href="/">
                 Купить абонемент
               </a>
@@ -152,7 +153,7 @@
                   <span class="card__price">30000</span>
                   <span class="card__price-icon"></span>
                 </div>
-                <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -165,7 +166,7 @@
                   <span class="card__price">10200</span>
                   <span class="card__price-icon"></span>
                 </div>
-                <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -178,7 +179,7 @@
                   <span class="card__price">16200</span>
                   <span class="card__price-icon"></span>
                 </div>
-                <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -193,7 +194,7 @@
                   <span class="card__price">60000</span>
                   <span class="card__price-icon"></span>
                 </div>
-                <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -206,7 +207,7 @@
                   <span class="card__price">20400</span>
                   <span class="card__price-icon"></span>
                 </div>
-                <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -219,7 +220,7 @@
                   <span class="card__price">32400</span>
                   <span class="card__price-icon"></span>
                 </div>
-                <!-- для деактивации ссылки добавить класс card__link--disabled -->
+
                 <a class="card__link button" href="/">
                   Купить абонемент
                 </a>
@@ -249,7 +250,7 @@
               <p class="games__intro">
                 Ежегодные соревнования по CrossFit
               </p>
-              <!-- для деактивации ссылки добавить класс games__link--disabled -->
+
               <a class="games__link button" href="/">Заполнить заявку</a>
             </div>
           </div>
@@ -461,20 +462,17 @@
               <p>
                 Безлимитный абонемент в тренажёрный зал
               </p>
-              <!-- для деактивации ссылки добавить класс offers__link--disabled -->
               <a class="offers__link offers__link--accent" href="/">Подробнее</a>
             </div>
           </li>
           <li class="offers__item">
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <!-- для деактивации ссылки добавить класс offers__link--light-disabled -->
             <a class="offers__link" href="/">Подробнее</a>
           </li>
           <li class="offers__item">
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
-            <!-- для деактивации ссылки добавить класс offers__link--light-disabled -->
             <a class="offers__link" href="/">Подробнее</a>
           </li>
         </ul>
@@ -485,272 +483,287 @@
           <h2 class="faq__title page__title">Вопросы и ответы</h2>
           <div class="faq__info-container">
             <ul class="faq__navigation-list">
-            <li class="faq__nav-item">
-              <button class="faq__nav-button faq__nav-button--current" type="button">Центр</button>
-            </li>
-            <li class="faq__nav-item">
-              <button class="faq__nav-button" type="button">Абонемент</button>
-            </li>
-            <li class="faq__nav-item">
-              <button class="faq__nav-button" type="button">Услуги</button>
-            </li>
-            <li class="faq__nav-item">
-              <button class="faq__nav-button" type="button">Правила</button>
-            </li>
+              <li class="faq__nav-item">
+                <button class="faq__nav-button faq__nav-button--current" type="button">Центр</button>
+              </li>
+              <li class="faq__nav-item">
+                <button class="faq__nav-button" type="button">Абонемент</button>
+              </li>
+              <li class="faq__nav-item">
+                <button class="faq__nav-button" type="button">Услуги</button>
+              </li>
+              <li class="faq__nav-item">
+                <button class="faq__nav-button" type="button">Правила</button>
+              </li>
             </ul>
 
             <div class="faq__questions questions">
               <div class="questions__list">
-                <details class="questions__item" open>
-                  <summary>
+
+                <div class="questions__item questions__item--open">
+                  <div class="questions__header-container">
                     <h3>
                       Как стать членом фитнес&#8288;-&#8288;центра?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
-                  <p>
-                    При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
-                  </p>
-                  <!-- <button class="questions__button questions__button--open" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
-                    Где можно посмотреть расписание?
-                  </h3>
-                  <span class="questions__button-icon"></span>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                  </summary>
+                      Где можно посмотреть расписание?
+                    </h3>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
-                  </p>
-
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Есть кулеры в центре? Предоставляются полотенца?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
-                    Сколько тренеров работает в клубе и какова  их&nbsp;квалификация?
-                  </h3>
-                  <span class="questions__button-icon"></span>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                  </summary>
-
-                  <p>
-                    При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
-                  </p>
-
-                </details>
+                      Сколько тренеров работает в клубе и какова их&nbsp;квалификация?
+                    </h3>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придет вам на почту.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div class="questions__list">
-                <details class="questions__item" open>
-                  <summary>
+
+                <div class="questions__item questions__item--open">
+                  <div class="questions__header-container">
                     <h3>
                       Занятия с тренером входят в абонемент?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Можно ли заморозить абонемент?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Есть ли лимит по посещениям тренажерного зала и групповых занятий?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Что такое семейный доступ и доступ для друзей?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
-
-                  <p>
-                    При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div class="questions__list">
-                <details class="questions__item" open>
-                  <summary>
+
+                <div class="questions__item questions__item--open">
+                  <div class="questions__header-container">
                     <h3>
                       Предлагает ли клуб услуги по консультированию по&nbsp;вопросам питания?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и&nbsp;предложит программу питания.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Проводятся ли в клубе какие-либо мероприятия или соревнования?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Можно ли приобрести в центре спортивное питание?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Есть ли в центре детская комната?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
-
-                  <p>
-                    Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div class="questions__list">
-                <details class="questions__item" open>
-                  <summary>
+
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Есть в фитнес-центре дресс-код?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item questions__item--open">
+                  <div class="questions__header-container">
                     <h3>
                       Можно ли приводить с собой детей на тренировки?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Какие дополнительные правила посещения центра?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                    </p>
+                  </div>
+                </div>
 
-                  <p>
-                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
-                <details class="questions__item">
-                  <summary>
+                <div class="questions__item">
+                  <div class="questions__header-container">
                     <h3>
                       Нужна ли медицинская справка для посещения залов и бассейна?
                     </h3>
-                    <span class="questions__button-icon"></span>
-                  </summary>
-
-                  <p>
-                    Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                  </p>
-                  <!-- <button class="questions__button" type="button">
-                    <span class="visually-hidden">Показать или скрыть ответ</span>
-                  </button> -->
-                </details>
+                    <button class="questions__button" type="button">
+                      <span class="visually-hidden">Открыть ответ.</span>
+                    </button>
+                  </div>
+                  <div class="questions__content">
+                    <p>
+                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -848,23 +861,18 @@
         <nav class="footer__navigation footer-nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
-              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Услуги</a>
             </li>
             <li class="footer-nav__item">
-              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Абонементы</a>
             </li>
             <li class="footer-nav__item">
-              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Акции</a>
             </li>
             <li class="footer-nav__item">
-              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Тренеры</a>
             </li>
             <li class="footer-nav__item">
-              <!-- для деактивации ссылки добавить класс footer-nav__link--disabled -->
               <a class="footer-nav__link" href="/">Расписание</a>
             </li>
           </ul>
@@ -872,7 +880,6 @@
 
         <ul class="footer__social social">
           <li class="social__item">
-            <!-- для деактивации ссылки добавить класс social__link--disabled -->
             <a class="social__link" href="/">
               <svg class="social__icon">
                 <use href="/__spritemap#sprite-icon-vk"></use>
@@ -881,7 +888,6 @@
             </a>
           </li>
           <li class="social__item">
-            <!-- для деактивации ссылки добавить класс social__link--disabled -->
             <a class="social__link" href="/">
               <svg class="social__icon">
                 <use href="/__spritemap#sprite-icon-ok"></use>
@@ -890,7 +896,6 @@
             </a>
           </li>
           <li class="social__item">
-            <!-- для деактивации ссылки добавить класс social__link--disabled -->
             <a class="social__link" href="/">
               <svg class="social__icon">
                 <use href="/__spritemap#sprite-icon-reddit"></use>
