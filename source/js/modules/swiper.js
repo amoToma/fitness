@@ -49,4 +49,3 @@ const reviewsSwiper = new Swiper('.swiper__reviews', {
 });
 
 export { juriSwiper, reviewsSwiper };
-
