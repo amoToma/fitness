@@ -1,3 +1,7 @@
+.tabs {
+  position: relative;
+}
+
 .tabs__navigation {
   @include list;
 

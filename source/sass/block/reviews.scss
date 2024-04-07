@@ -124,6 +124,10 @@
 .reviews__swiper-container {
   position: relative;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: fit-content;
+  }
 }
 
 .reviews__button {
