@@ -32,18 +32,19 @@ const juriSwiper = new Swiper('.swiper__juri', {
 
 const reviewsSwiper = new Swiper('.swiper__reviews', {
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   modules: [ Navigation ],
 
   navigation: {
-    prevEl: '.swiper-button--prev',
-    nextEl: '.swiper-button--next',
+    prevEl: '.reviews__button--prev',
+    nextEl: '.reviews__button--next',
   },
 
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 10
+      spaceBetween: 10,
+      //initialSlide: 2,
     }
   }
 });

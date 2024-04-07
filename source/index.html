@@ -907,52 +907,54 @@
           <div class="reviews__swiper swiper swiper__reviews">
             <ul class="reviews__list swiper-wrapper">
               <li class="reviews__item swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.webp 1x, img/reviews-avatar-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" srcset="img/reviews-avatar-mobile@1x.webp 1x, img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68">
-                  <source type="image/jpg" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.jpg 1x, img/reviews-avatar-tablet@2x.jpg 2x" width="80" height="80">
-                  <img src="img/reviews-avatar-mobile@1x.jpg" srcset="img/reviews-avatar-mobile@2x.jpg" width="68" height="68" alt="Анна Орлова">
-                </picture>
-                <div>
-                  <h3>Анна Орлова</h3>
-                  <p>
-                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-                  </p>
+                <div class="reviews__item-content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-anna-tablet@1x.webp 1x, img/reviews-avatar-anna-tablet@2x.webp 2x" width="80" height="80">
+                    <source type="image/webp" srcset="img/reviews-avatar-anna-mobile@1x.webp 1x, img/reviews-avatar-anna-mobile@2x.webp 2x" width="68" height="68">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/reviews-avatar-anna-tablet@1x.jpg 1x, img/reviews-avatar-anna-tablet@2x.jpg 2x" width="80" height="80">
+                    <img src="img/reviews-avatar-anna-mobile@1x.png" srcset="img/reviews-avatar-anna-mobile@2x.jpg" width="68" height="68" alt="Анна Орлова">
+
+                  </picture>
+                  <div>
+                    <h3>Анна Орлова</h3>
+                    <p>
+                      «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                    </p>
+                  </div>
                 </div>
               </li>
               <li class="reviews__item swiper-slide">
-          <picture>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.webp 1x, img/reviews-avatar-tablet@2x.webp 2x" width="80" height="80">
-            <source type="image/webp" srcset="img/reviews-avatar-mobile@1x.webp 1x, img/reviews-avatar-mobile@2x.webp 2x" width="68" height="68">
-            <source type="image/jpg" media="(min-width: 768px)" srcset="img/reviews-avatar-tablet@1x.jpg 1x, img/reviews-avatar-tablet@2x.jpg 2x" width="80" height="80">
-            <img src="img/reviews-avatar-mobile@1x.jpg" srcset="img/reviews-avatar-mobile@2x.jpg" width="68" height="68" alt="Анна Орлова">
-          </picture>
-          <div>
-            <h3>Анна Орлова</h3>
-            <p>
-              «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-            </p>
-          </div>
+                <div class="reviews__item-content">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-avatar-kris-tablet@1x.webp 1x, img/reviews-avatar-kris-tablet@2x.webp 2x" width="80" height="80">
+                    <source type="image/webp" srcset="img/reviews-avatar-kris-mobile@1x.webp 1x, img/reviews-avatar-kris-mobile@2x.webp 2x" width="68" height="68">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/reviews-avatar-kris-tablet@1x.jpg 1x, img/reviews-avatar-kris-tablet@2x.jpg 2x" width="80" height="80">
+                    <img src="img/reviews-avatar-kris-mobile@1x.png" srcset="img/reviews-avatar-kris-mobile@2x.jpg" width="68" height="68" alt="Кристина Смирнова">
+                  </picture>
+                  <div>
+                    <h3>Кристина Смирнова</h3>
+                    <p>
+                      «Много лет посещаю данный зал. Отличные тренажеры, талантливые тренеры, есть детская комната. Часто проводят акции, цены доступные.»
+                    </p>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
-          <button class="reviews__button swiper-button swiper-button--prev" type="button">
+          <button class="reviews__button reviews__button--prev swiper-button swiper-button--prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
             <svg class="swiper-button__icon" width="17" height="32" viewBox="0 0 17 32">
               <use href="/__spritemap#sprite-icon-prev"></use>
             </svg>
           </button>
-          <button class="reviews__button swiper-button swiper-button--next" type="button">
+          <button class="reviews__button reviews__button--next swiper-button swiper-button--next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
             <svg class="swiper-button__icon" width="17" height="32" viewBox="0 0 17 32">
               <use href="/__spritemap#sprite-icon-next"></use>
             </svg>
           </button>
         </div>
-
       </section>
-
-
 
       <div class="form-contacts" data-test="form">
         <div class="form-contacts__form form">
@@ -963,10 +965,10 @@
             <form class="form__info-input" action="https://echo.htmlacademy.ru/" method="get">
 
               <label class="visually-hidden" for="name">Имя</label>
-              <input class="form__input" id="name" type="text" name="name" placeholder="Имя" required>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
 
               <label class="visually-hidden" for="tel">Телефон</label>
-              <input class="form__input" id="tel" type="tel" name="telephone" placeholder="Телефон" required>
+              <input class="form__input" id="tel" type="tel" name="telephone" placeholder="Телефон" pattern="^((\+7|)+([0-9]){10})$" required>
 
               <button class="form__button button" type="submit">Отправить</button>
             </form>

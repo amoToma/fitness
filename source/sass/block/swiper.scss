@@ -48,6 +48,11 @@
   &:active .swiper-button__icon {
     stroke: $border-light;
   }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 }
 
 .swiper-button--next {
