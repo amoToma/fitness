@@ -121,21 +121,21 @@
   display: block;
   position: absolute;
   background-color: $base-background;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   -webkit-mask-image: url("/__spritemap#sprite-icon-play-view");
   mask-image: url("/__spritemap#sprite-icon-play-view");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  mask-position: 4px center;
-  mask-size: 9px 10px;
+  mask-position: 3px center;
+  mask-size: 10px 12px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   @media (min-width: $desktop-width) {
-    width: 17px;
-    height: 17px;
-    mask-size: 13px 15px;
+    width: 18px;
+    height: 18px;
+    mask-size: 17px 17px;
   }
 }
