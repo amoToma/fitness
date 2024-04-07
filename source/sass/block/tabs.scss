@@ -97,7 +97,7 @@
   @include list;
 
   display: grid;
-  gap: 35px;
+  gap: 36px;
 
   @media (min-width:$tablet-width) {
     gap: 40px;
