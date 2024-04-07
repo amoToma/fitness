@@ -41,7 +41,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-    row-gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,6 +53,7 @@
   border: none;
   box-shadow: inset  0 0 0 2px $border-light;
   padding: 22px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
@@ -88,15 +88,20 @@
   }
  }
 
+ .form__input-container {
+  padding-bottom: 26px;
+  position: relative;
+ }
+
  .form__input {
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
   color: $text-color-light;
-  margin-bottom: 36px;
   background: transparent;
   height: 36px;
+  width: 100%;
   border: none;
   border-bottom: solid 1px $border-neutral;
   padding: 5px 4px 4px;
@@ -130,8 +135,18 @@
   }
 
   &--error {
-    border-color: #ff121f;
+    border-color: $border-error;
   }
+ }
+
+ .form__error {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 2px;
+  line-height: 22px;
+  color: $text-color-error;
  }
 
  .form__input::placeholder{
