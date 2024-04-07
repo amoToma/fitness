@@ -8,7 +8,7 @@
   border: solid 7px $base-background;
 
   @media (min-width:$tablet-width) {
-    padding: 65px;
+    padding: 58px;
   }
 
   &:hover,
@@ -82,7 +82,7 @@
   color: $text-color;
 
   @media (min-width:$tablet-width) {
-    padding: 29px;
+    padding: 27px;
   }
 
   &:hover {
