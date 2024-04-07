@@ -11,6 +11,12 @@
   }
 }
 
+.hero__header {
+  @media (min-width:$desktop-width) {
+   margin-bottom: 30px;
+  }
+}
+
 .hero__contant {
   padding-top: 48px;
   padding-bottom: 32px;
@@ -49,7 +55,7 @@
   display: grid;
   grid-template-columns: 113px 156px;
   column-gap: 21px;
-  row-gap: 48px;
+  row-gap: 47px;
   align-items: end;
 
 
@@ -118,10 +124,15 @@
   @media (min-width:$tablet-width) {
     grid-row-start: 1;
     grid-row-end: 3;
+    line-height: 22px;
+    padding-top: 2px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 0;
+    max-width: 115px;
   }
 }
-
-
 
 .hero__title-intro {
   text-align: right;
@@ -131,16 +142,19 @@
   line-height: 32px;
   margin: 0;
   margin-bottom: 14px;
+  padding-top: 1px;
 
   @media (min-width:$tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
+    padding-top: 1px;
   }
 
   @media (min-width:$desktop-width) {
     font-size: 54px;
     line-height: 54px;
+    margin-bottom: 40px;
   }
 }
 
@@ -159,6 +173,10 @@
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 20px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 25px;
   }
 
   &:hover {

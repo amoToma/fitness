@@ -15,7 +15,8 @@ const juriSwiper = new Swiper('.swiper__juri', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 10
+      spaceBetween: 10,
+      initialSlide: 2,
     },
 
     768: {

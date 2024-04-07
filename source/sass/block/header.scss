@@ -21,7 +21,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +34,8 @@
   @media (min-width: $desktop-width) {
     font-size: 26px;
     line-height: 26px;
+    padding-top: 32px;
+    padding-bottom: 27px;
   }
 
   &::before {
