@@ -1,7 +1,12 @@
 .faq {
   background-color: $light-background;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 98px;
