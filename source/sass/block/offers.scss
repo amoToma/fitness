@@ -11,8 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 103px;
-    padding-right: 103px;
+    padding: 100px 103px;
     width: 1366px;
   }
 }
@@ -112,7 +111,7 @@
       url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 1x,
       url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 2x,
     );
-    background-size: 280px 460px;
+    background-size: 280px 462px;
   }
 }
 
@@ -140,7 +139,7 @@
 
 .offers__item h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -173,8 +172,8 @@
 }
 
 .offers__item p {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 300;
   text-align: center;
   margin: 0;
@@ -184,6 +183,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: start;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,9 +194,12 @@
 .offers__item--accent p {
   color: $text-color-light;
   margin-bottom: 28px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -227,7 +230,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   text-align: center;
 
   &::after {
@@ -244,6 +247,10 @@
     margin-bottom: 0;
     margin-top: auto;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
   }
 
   &:hover,
