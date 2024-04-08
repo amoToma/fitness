@@ -131,10 +131,7 @@
   padding: 0;
   background-color: $medium-background;
   margin-bottom: 40px;
-
-  & span {
-    color: $text-color-light;
-  }
+  color: $text-color-light;
 
   @media (min-width: $tablet-width) {
     width: 320px;
@@ -216,7 +213,6 @@
   font-weight: 700;
   background: linear-gradient(142deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (min-width: $tablet-width) {

@@ -2,18 +2,18 @@
   background: linear-gradient(to right, #1c3477, #1a3578 39%, #73184b 76%, #b80027);
   color: $text-color-light;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 100px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 119px;
   }
 }
 
 .hero__header {
-  @media (min-width:$desktop-width) {
-   margin-bottom: 30px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -21,30 +21,32 @@
   padding-top: 48px;
   padding-bottom: 32px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 31px;
     padding-bottom: 31px;
-    background-image: image-set(
-      url("../img/hero-man-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/hero-man-tablet@2x.webp") type("image/webp") 2x,
-      url("../img/hero-man-tablet@1x.jpg") type("image/jpg") 1x,
-      url("../img/hero-man-tablet@2x.jpg") type("image/jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../img/hero-man-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/hero-man-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/hero-man-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../img/hero-man-tablet@2x.jpg") type("image/jpg") 2x
+      );
     background-repeat: no-repeat;
     background-size: 324px 390px;
     background-position: right 45px top;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 52px;
     padding-bottom: 52px;
     padding-left: 250px;
-    background-image: image-set(
-      url("../img/hero-man-desktop@1x.webp") type("image/webp") 1x,
-      url("../img/hero-man-desktop@2x.webp") type("image/webp") 2x,
-      url("../img/hero-man-desktop@1x.jpg") type("image/jpg") 1x,
-      url("../img/hero-man-desktop@2x.jpg") type("image/jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../img/hero-man-desktop@1x.webp") type("image/webp") 1x,
+        url("../img/hero-man-desktop@2x.webp") type("image/webp") 2x,
+        url("../img/hero-man-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../img/hero-man-desktop@2x.jpg") type("image/jpg") 2x
+      );
     background-repeat: no-repeat;
     background-size: 500px 524px;
     background-position: right 175px top;
@@ -59,14 +61,14 @@
   align-items: end;
 
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: 113px 185px;
     column-gap: 26px;
     row-gap: 50px;
     align-items: center;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 115px 270px;
     column-gap: 0;
     row-gap: 40px;
@@ -84,14 +86,14 @@
   text-align: right;
   max-width: 160px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 2px;
     max-width: 185px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 92px;
     line-height: 110px;
     letter-spacing: 4px;
@@ -102,13 +104,13 @@
 .hero__img {
   display: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
     width: 324px;
     height: 390px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 500px;
     height: 524px;
   }
@@ -121,14 +123,14 @@
   text-align: right;
   max-width: 113px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-row-start: 1;
     grid-row-end: 3;
     line-height: 22px;
     padding-top: 2px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 0;
     max-width: 115px;
   }
@@ -144,14 +146,14 @@
   margin-bottom: 14px;
   padding-top: 1px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 9px;
     padding-top: 1px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 54px;
     line-height: 54px;
     margin-bottom: 40px;
@@ -169,13 +171,13 @@
   padding: 22px;
   border: solid 2px $border-light;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 20px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 25px;
   }
 

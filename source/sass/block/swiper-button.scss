@@ -35,26 +35,26 @@
   right: -17px;
   stroke: $border-dark;
 
-  & .swiper-button__icon {
-    right: 17px;
-  }
-
   @media (min-width: $desktop-width) {
     right: -74px;
   }
+}
+
+.swiper-button--next .swiper-button__icon {
+  right: 17px;
 }
 
 .swiper-button--prev {
   left: -17px;
   stroke: $border-dark;
 
-  & .swiper-button__icon {
-    left: 17px;
-  }
-
   @media (min-width: $desktop-width) {
     left: -74px;
   }
+}
+
+.swiper-button--prev .swiper-button__icon {
+  left: 17px;
 }
 
 .swiper-button__icon {

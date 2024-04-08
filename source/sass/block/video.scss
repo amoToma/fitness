@@ -123,9 +123,7 @@
   background-color: $base-background;
   width: 13px;
   height: 13px;
-  -webkit-mask-image: url("/__spritemap#sprite-icon-play-view");
   mask-image: url("/__spritemap#sprite-icon-play-view");
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-position: 3px center;
   mask-size: 10px 12px;

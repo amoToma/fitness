@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const juriSwiper = new Swiper('.swiper__juri', {
+const juriSwiper = new Swiper('.swiper--juri', {
   direction: 'horizontal',
   loop: true,
   modules: [ Navigation ],
@@ -31,7 +31,7 @@ const juriSwiper = new Swiper('.swiper__juri', {
   }
 });
 
-const reviewsSwiper = new Swiper('.swiper__reviews', {
+const reviewsSwiper = new Swiper('.swiper--reviews', {
   direction: 'horizontal',
   loop: false,
   modules: [ Navigation ],

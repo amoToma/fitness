@@ -19,8 +19,9 @@
 
 .reviews__list {
   @include list;
+
   align-items: stretch;
-   align-content: stretch;
+  align-content: stretch;
 }
 
 .reviews__title {
@@ -101,7 +102,6 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
-  text-align: center;
   margin: 0;
   text-align: center;
 
@@ -115,7 +115,6 @@
 .reviews__item img {
   width: 68px;
   height: 68px;
-  //border-radius: 50%;
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {

@@ -1,6 +1,5 @@
 const video = document.querySelector('.video');
 const link = video.querySelector('.video__link');
-//const media = video.querySelector('.video__media');
 const button = video.querySelector('.video__button');
 
 const createIframe = () => {

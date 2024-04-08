@@ -30,15 +30,14 @@
     column-gap: 40px;
     row-gap: 30px;
   }
-
 }
 
 .offers__item {
   width: 290px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 29px;
+  padding: 21px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +49,10 @@
     align-items: flex-start;
     width: 100%;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px;
   }
 }
 
@@ -67,12 +70,13 @@
   min-width: 320px;
   width: 100vw;
   background-color: $accent-background;
-  background-image: image-set(
-    url("../img/offers-girl-mobile@1x.webp") type("image/webp") 1x,
-    url("../img/offers-girl-mobile@2x.webp") type("image/webp") 2x,
-    url("../img/offers-girl-mobile@1x.jpg") type("image/jpg") 1x,
-    url("../img/offers-girl-mobile@1x.jpg") type("image/jpg") 2x,
-  );
+  background-image:
+    image-set(
+      url("../img/offers-girl-mobile@1x.webp") type("image/webp") 1x,
+      url("../img/offers-girl-mobile@2x.webp") type("image/webp") 2x,
+      url("../img/offers-girl-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../img/offers-girl-mobile@1x.jpg") type("image/jpg") 2x,
+    );
   background-repeat: no-repeat;
   background-size: 320px 360px;
   background-position: bottom center;
@@ -88,12 +92,13 @@
     grid-column-start: 1;
     grid-column-end: 3;
     margin-bottom: 0;
-    background-image: image-set(
-      url("../img/offers-girl-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/offers-girl-tablet@2x.webp") type("image/webp") 2x,
-      url("../img/offers-girl-tablet@1x.jpg") type("image/jpg") 1x,
-      url("../img/offers-girl-tablet@1x.jpg") type("image/jpg") 2x,
-    );
+    background-image:
+      image-set(
+        url("../img/offers-girl-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/offers-girl-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/offers-girl-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../img/offers-girl-tablet@1x.jpg") type("image/jpg") 2x,
+      );
     background-size: 400px 462px;
     background-position: top right;
   }
@@ -105,12 +110,13 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: image-set(
-      url("../img/offers-girl-desktop@1x.webp") type("image/webp") 1x,
-      url("../img/offers-girl-desktop@2x.webp") type("image/webp") 2x,
-      url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 1x,
-      url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 2x,
-    );
+    background-image:
+      image-set(
+        url("../img/offers-girl-desktop@1x.webp") type("image/webp") 1x,
+        url("../img/offers-girl-desktop@2x.webp") type("image/webp") 2x,
+        url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../img/offers-girl-desktop@1x.jpg") type("image/jpg") 2x,
+      );
     background-size: 280px 462px;
   }
 }
@@ -139,7 +145,7 @@
 
 .offers__item h3 {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -187,7 +193,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: auto;
   }
 }
 
@@ -309,7 +315,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {

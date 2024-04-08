@@ -23,14 +23,13 @@
   font-weight: 600;
   margin: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 54px;
     line-height: 54px;
   }
 }
-

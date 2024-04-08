@@ -51,7 +51,8 @@
     width: 100%;
   }
 }
- .form__button {
+
+.form__button {
   color: $text-color-light;
   background-color: $secondary-medium-background;
   border: none;
@@ -92,14 +93,14 @@
     background: transparent;
     pointer-events: none;
   }
- }
+}
 
- .form__input-container {
+.form__input-container {
   padding-bottom: 27px;
   position: relative;
- }
+}
 
- .form__input {
+.form__input {
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 22px;
@@ -110,11 +111,11 @@
   width: 100%;
   border: none;
   border-bottom: solid 1px $border-neutral;
-  padding: 5px 0px 2px;
+  padding: 5px 0 2px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 6px 0px 1px;
+    padding: 6px 0 1px;
   }
 
   &:hover {
@@ -124,7 +125,7 @@
   &:focus {
     outline: none;
     border: solid 1px $border-light;
-    padding: 4px 3px 4px;
+    padding: 4px 3px;
   }
 
   &:focus::placeholder {
@@ -144,9 +145,9 @@
   &--error {
     border-color: $border-error;
   }
- }
+}
 
- .form__error {
+.form__error {
   position: absolute;
   content: "";
   display: block;
@@ -154,18 +155,18 @@
   bottom: 2px;
   line-height: 22px;
   color: $text-color-error;
- }
+}
 
- .form__input::placeholder{
+.form__input::placeholder {
   color: $text-color-light;
   opacity: 40%;
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
- }
+}
 
- .form__title {
+.form__title {
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -177,4 +178,4 @@
   @media (min-width: $desktop-width) {
     text-align: start;
   }
- }
+}
