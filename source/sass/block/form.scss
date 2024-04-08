@@ -7,6 +7,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .form__info {
@@ -52,12 +56,14 @@
   background-color: $secondary-medium-background;
   border: none;
   box-shadow: inset  0 0 0 2px $border-light;
-  padding: 22px;
+  padding: 23px;
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 27px;
+    margin-top: 9px;
   }
 
   &:hover {
@@ -89,7 +95,7 @@
  }
 
  .form__input-container {
-  padding-bottom: 26px;
+  padding-bottom: 27px;
   position: relative;
  }
 
@@ -104,10 +110,11 @@
   width: 100%;
   border: none;
   border-bottom: solid 1px $border-neutral;
-  padding: 5px 4px 4px;
+  padding: 5px 0px 2px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 6px 0px 1px;
   }
 
   &:hover {
@@ -159,7 +166,7 @@
  }
 
  .form__title {
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
