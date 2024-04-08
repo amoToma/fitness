@@ -94,6 +94,17 @@
 
 .features__item:nth-of-type(2) {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.features__item:nth-of-type(2),
+.features__item:nth-of-type(5) {
+  @media (min-width: $desktop-width) {
+    gap: 81px;
+  }
 }
 
 .features__item:first-of-type::before,
@@ -106,7 +117,7 @@
     height: 2px;
     background-color: #d10a42;
     opacity: 0.2;
-    bottom: -43px;
+    bottom: -41px;
   }
 }
 
@@ -267,6 +278,12 @@
     margin-bottom: 25px;
     font-size: 24px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 30px;
   }
 }
 
