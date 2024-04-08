@@ -1,7 +1,7 @@
 const NAME_PROPERTY = /^[a-zа-яё\s]{0,}$/i;
-const TEL_PROPERTY = /^((\+7|)+([0-9]){10})$/;
+const TEL_PROPERTY = /^[0-9\s]{0,}$/;
 const ERROR_TEXT_NAME = 'Используйте только буквы';
-const ERROR_TEXT_TEL = 'Формат заполнения +79991111111';
+const ERROR_TEXT_TEL = 'Используйте только цифры';
 const ERROR_TEXT = 'Заполните поле';
 
 const form = document.querySelector('.form');

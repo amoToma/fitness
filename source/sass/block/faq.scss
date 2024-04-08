@@ -89,7 +89,7 @@
     box-shadow: inset 0 0 0 1px $border-dark;
   }
 
-  &:focus-visible {
+  &:focus {
     outline: none;
     background-color: $base-background;
     box-shadow: inset 0 0 0 1px $border-dark;

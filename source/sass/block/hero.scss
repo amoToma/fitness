@@ -20,36 +20,51 @@
 .hero__contant {
   padding-top: 48px;
   padding-bottom: 32px;
+  min-height: 358px;
 
   @media (min-width: $tablet-width) {
     padding-top: 31px;
     padding-bottom: 31px;
+    min-height: 390px;
     background-image:
       image-set(
         url("../img/hero-man-tablet@1x.webp") type("image/webp") 1x,
-        url("../img/hero-man-tablet@2x.webp") type("image/webp") 2x,
         url("../img/hero-man-tablet@1x.jpg") type("image/jpg") 1x,
-        url("../img/hero-man-tablet@2x.jpg") type("image/jpg") 2x
       );
     background-repeat: no-repeat;
     background-size: 324px 390px;
     background-position: right 45px top;
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../img/hero-man-tablet@2x.webp") type("image/webp") 2x,
+          url("../img/hero-man-tablet@2x.jpg") type("image/jpg") 2x,
+        );
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 52px;
     padding-bottom: 52px;
     padding-left: 250px;
+    min-height: 525px;
     background-image:
       image-set(
         url("../img/hero-man-desktop@1x.webp") type("image/webp") 1x,
-        url("../img/hero-man-desktop@2x.webp") type("image/webp") 2x,
         url("../img/hero-man-desktop@1x.jpg") type("image/jpg") 1x,
-        url("../img/hero-man-desktop@2x.jpg") type("image/jpg") 2x
       );
     background-repeat: no-repeat;
     background-size: 500px 524px;
     background-position: right 175px top;
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../img/hero-man-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/hero-man-desktop@2x.jpg") type("image/jpg") 2x,
+        );
+    }
   }
 }
 
@@ -188,7 +203,7 @@
 
   &:focus {
     border: solid 2px #000000;
-    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #103aae;
     outline: none;
   }
@@ -200,7 +215,7 @@
 
   &--disabled {
     opacity: 50%;
-    color: rgba($color: #ffffff, $alpha: 0.5);
+    color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
   }
 }
