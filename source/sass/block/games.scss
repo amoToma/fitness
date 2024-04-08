@@ -66,8 +66,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 60px 80px 98px;
-    grid-template-columns: 168px 95px;
-    column-gap: 77px;
+    grid-template-columns: 168px 102px;
+    column-gap: 70px;
     row-gap: 30px;
   }
 }
@@ -144,7 +144,6 @@
 .games__date-container {
   display: grid;
   grid-template-columns: auto auto;
-  //column-gap: 1px;
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
@@ -155,6 +154,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 21px auto;
+    margin-bottom: 21px;
   }
 }
 
@@ -189,8 +189,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 6px;
-    margin-bottom: 6px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
   }
 }
 
